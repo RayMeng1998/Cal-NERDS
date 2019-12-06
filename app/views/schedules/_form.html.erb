@@ -48,6 +48,9 @@
         value="<%= time %>" 
         id="<%= day %>-<%= time %>-cb" 
         class="d-none">
+        <label for="schedule[<%= day %>_times][]">
+          Fixed <%= day %> <%= time %>
+        </label>
 
       <% end %>
     <% end %>
@@ -60,6 +63,9 @@
         value="<%= time %>" 
         id="<%= day %>-<%= time %>-var-cb" 
         class="d-none">
+        <label for="schedule[<%= day %>_times][]">
+          Variable <%= day %> <%= time %>
+        </label>
         
       <% end %>
     <% end %>

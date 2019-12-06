@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Cal NERDS Schedule</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -47,6 +47,10 @@
 		<%= yield %>
 
 	</div>
+
+	<% if Rails.env.development? %>
+		<script src="node_modules/axe-core/axe.min.js"></script>
+	<% end %>
 
 </body>
 </html>
